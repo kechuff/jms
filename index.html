@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CVFINAL</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a  href="#titulo">Inicio</a>
+               <a href="#experiencia">Mi experiencia</a>
+                <a href="#misestudios">Mis estudios</a>
+                <a href="#contacto">Contacto</a>
+            </ul>
+                    </nav>
+        
+    </header>
+    <main>
+        
+        <section id="titulo">
+            
+        <h1>MIGUEL DOMINGUEZ</h1>
+        <h2>LICENCIADO EN SISTEMAS</h2>
+        
+        
+        
+        <div class="foto">
+        <img src="./imagenes/fotocv.png" alt="mi foto">
+    </div>
+    
+    
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia laboral</h2>
+        <div class="experiencia-lab">
+
+            <div class="detalles">
+                <img src="./imagenes/teclado.jpg" alt="foto data">
+                <h3>Data entry</h3>
+                <p>De 2003 a 2006 en banco provincia</p>
+
+
+            </div>
+
+            <div class="detalles">
+                <img src="./imagenes/redes.jpg" alt="foto redes">
+                <h3>Adminstrador de redes</h3>
+                <p>De 2007 a 2016 en inforedes Argentina</p>
+
+
+            </div>
+
+            <div class="detalles">
+                <img src="./imagenes/Ventasonline.jpg" alt="foto mercado">
+                <h3>Desarrollador full stack</h3>
+                <p>De 2017 al dia en Mercado libre</p>
+
+
+            </div>
+
+
+
+        </div>
+        
+        
+    </section>
+
+           
+    <section id="misestudios">
+        <h2>Mi preparacion</h2>
+        
+        <div class="estudios-real" >   
+        
+            <div class="estudios">
+                <img src="./imagenes/uca.jpg" id="fotouca" alt="foto de la UCA">
+                <h3>Lic. en sistemas</h3>
+                <p>2001-2005</p>
+                <button onclick = "miFuncion();">+ info</button>
+                
+
+
+        <script type ="text/javascript">
+
+        var fotoActual = "fotouca";
+
+        function miFuncion()
+        {
+        var imagen = document.getElementById("fotouca");
+        if(fotoActual == "fotouca"){
+        imagen.src = "./imagenes/nota1.jpg";
+        fotoActual = "nota1"
+        }
+        else{
+        imagen.src = "./imagenes/uca.jpg";
+        fotoActual = "fotouca"
+        }
+        }
+         </script>
+            
+            
+        </div>
+            
+        <div class="estudios">
+                <img src="./imagenes/fullstack.png" id="fotofull" alt="foto full stack">
+                <h3>Full satck developer</h3>
+                <p>2005-2007</p>
+                <button onclick = "miFuncion2();">+ info</button>
+                
+        <script type ="text/javascript">
+        var fotoActual = "fotofull";
+    
+        function miFuncion2()
+        {
+        var imagen = document.getElementById("fotofull");
+        /**imagen.src = "./imagenes/fullstack.png"*/
+        if(fotoActual == "fotofull"){
+            imagen.src = "./imagenes/nota2.jpg";
+            fotoActual = "nota2"
+        }
+        else{
+            imagen.src = "./imagenes/fullstack.png";
+            fotoActual = "fotofull"
+        }
+        }  
+        </script>  
+            
+            
+        </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+    
+
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <h3>Contacteme!</h3>
+
+            <div class="fila">
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-phone"></i> Teléfono
+                    </h2>
+                    <span class="info-contacto">116 - 5555555</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </h2>
+                    <span class="info-contacto">migueldominguez@gmail.com</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-globe"></i> Página Web
+                    </h2>
+                    <span class="info-contacto">www.migueldominguez.com</span>
+                </div>
+            </div>
+        </div>
+        <a href="https://wa.me/541165555555?text=Me%20interesaria%20contactarlo" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    </section>
+
+    
+
+
+
+
+
+        
+       
+        
+        </div>
+        
+
+
+
+        
+
+
+    </main>
+
+
+
+        
+    
+
+
+
+    
+
+
+    <footer>
+      
+    </footer>
+    
+</body>
+</html>
+
+
+
